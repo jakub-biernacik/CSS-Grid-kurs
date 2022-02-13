@@ -1,36 +1,50 @@
 <!DOCTYPE html>
 <html>
+
 <head>
 	<title>Using CSS Grid</title>
 	<style>
-		body{
+		body {
 			color: #fff;
 			font-family: 'Nunito Semibold';
 			text-align: center;
 		}
-		#content{
+
+		#content {
 			display: grid;
-			/*grid-template-columns: 30% 20% 50%;*/
-			/*grid-template-columns: 1fr 2fr 1fr;*/
 			grid-template-columns: repeat(3, 1fr);
+			grid-template-rows: repeat (10, minmax(200px, auto));
+			grid-gap: 10px;
+
 			max-width: 960px;
 			margin: 0 auto;
 		}
-		#content div{
+
+		#content div {
 			background: #3bbced;
 			padding: 30px;
 		}
-		#content div:nth-child(even){
+
+		#content div:nth-child(even) {
 			background: #777;
 			padding: 30px;
 		}
 	</style>
 </head>
+
 <body>
 
 	<div id="content">
 
-		<div>1</div>
+		<div>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aperiam dolore sapiente ea repellat laborum modi
+			asperiores, distinctio eaque nam quod labore consectetur voluptatem, nisi pariatur esse a natus unde
+			perspiciatis.Lorem ipsum dolor sit amet consectetur adipisicing elit. Aperiam dolore sapiente ea repellat
+			laborum modi
+			asperiores, distinctio eaque nam quod labore consectetur voluptatem, nisi pariatur esse a natus unde
+			perspiciatis.Lorem ipsum dolor sit amet consectetur adipisicing elit. Aperiam dolore sapiente ea repellat
+			laborum modi
+			asperiores, distinctio eaque nam quod labore consectetur voluptatem, nisi pariatur esse a natus unde
+			perspiciatis.</div>
 		<div>2</div>
 		<div>3</div>
 		<div>4</div>
@@ -43,4 +57,5 @@
 	</div>
 
 </body>
+
 </html>
